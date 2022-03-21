@@ -20,7 +20,8 @@ public class Main {
         return sortedArr;
     }
 
-    //wypisywanie tablicy
+
+    //wypisywanie tablicy do zadania 6
     public static String printIntArr(int[] arr) {
         String[] tempArr = new String[arr.length];
         for (int i = 0; i < arr.length; i++) {
@@ -31,6 +32,7 @@ public class Main {
 
     public static void main(String[] args) {
         //zadanie 2
+        System.out.println("Zadanie 2");
         Scanner scan = new Scanner(System.in);
         System.out.print("Wprowadź pierwszą wartość: ");
         int num1 = scan.nextInt();
@@ -43,6 +45,7 @@ public class Main {
         System.out.println("Twoje liczby to: " + sortedNumArr[0] + ", " + sortedNumArr[1] + ", " + sortedNumArr[2] + ".");
 
         //zadanie 3
+        System.out.println("Zadanie 3");
         System.out.print("Wprowadź pierwszą wartość: ");
         int arrToSort[] = new int[3];
         arrToSort[0] = scan.nextInt();
@@ -54,24 +57,26 @@ public class Main {
         System.out.println("Twoje liczby to: " + arrSorted[0] + ", " + arrSorted[1] + ", " + arrSorted[2] + ".");
 
         //zadanie 4
+        System.out.println("Zadanie 4");
         for (int i = 0; i < 10; i++) {
             System.out.println("Hello World!");
         }
 
         int i = 0;
         while (i < 10) {
-            System.out.println("Hello World! x");
+            System.out.println("Hello World!");
             i++;
         }
 
         int j = 0;
         do {
-            System.out.println("Hello World! x");
+            System.out.println("Hello World!");
             j++;
         }
         while (j < 10);
 
         //zadanie 5
+        System.out.println("Zadanie 5");
         int num = 1;
         for (int k = 1; k <= 10; k++) {
             for (int l = 1; l <= 10; l++) {
@@ -82,6 +87,7 @@ public class Main {
         }
 
         //zadanie 6
+        System.out.println("Zadanie 6");
         int min = 100;
         int max = 1000;
         int[] arr = new int[10];
