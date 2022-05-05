@@ -131,13 +131,12 @@ public class Products {
     @Override
     public String toString() {
         return "Products{" +
-                "name='" + getName() + '\'' +
-                ", productType=" + getProductType() +
-                ", price=" + getPrice() +
-                ", quantity=" + getQuantity() +
-                ", piecesAvailable=" + getPiecesAvailable() +
-                ", storage=" + getStorage() +
-                ", deliveryTime=" + getDeliveryTime() +
+                "name='" + name + '\'' +
+                ", productType=" + productType +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", piecesAvailable=" + piecesAvailable +
+                ", deliveryTime=" + deliveryTime +
                 '}';
     }
 }

@@ -34,7 +34,8 @@ public class Storage {
     @Override
     public String toString() {
         return "Storage{" +
-                "deliveryTime=" + getDeliveryTime() +
+                "deliveryTime=" + deliveryTime +
+                ", storedProducts=" + storedProducts +
                 '}';
     }
 }

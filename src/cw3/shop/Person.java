@@ -140,10 +140,12 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + getName() + '\'' +
-                ", surname='" + getSurname() + '\'' +
-                ", moneyInCash=" + getMoneyInCash() +
-                ", moneyOnCard=" + getMoneyOnCard() +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", moneyInCash=" + moneyInCash +
+                ", moneyOnCard=" + moneyOnCard +
+                ", currentCart=" + currentCart +
+                ", history=" + history +
                 '}';
     }
 }
