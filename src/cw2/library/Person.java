@@ -83,7 +83,6 @@ public class Person {
                 ", dateOfBirth=" + dateOfBirth +
                 ", Age=" + Age +
                 ", address=" + address +
-                ", borrowedBook=" + borrowedBook +
                 '}';
     }
 }

@@ -120,6 +120,10 @@ public class Book {
         Age = age;
     }
 
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
     public int getBorrowCount() {
         return borrowCount;
     }
@@ -146,7 +150,7 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", author=" + getAuthor() +
+                ", author=" + author +
                 ", genre=" + genre +
                 ", language=" + language +
                 ", publishDate=" + publishDate +
