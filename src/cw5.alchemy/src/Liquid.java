@@ -16,8 +16,8 @@ public class Liquid extends Ingredient {
     }
 
     public void setSolubility(int solubility) {
-        if (solubility < 0 || solubility > 100) {
-            throw new RuntimeException("Value must be between 0-100%");
+        if (solubility < 1 || solubility > 100) {
+            throw new RuntimeException("Value must be between 1-100%");
         }
         this.solubility = solubility;
     }

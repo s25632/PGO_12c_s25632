@@ -39,6 +39,8 @@ public class Elixir {
     public void setCatalyst(Liquid catalyst) {
         if (isCreated) {
             throw new RuntimeException("Elixir is already created.");
+        } else if (catalyst == null) {
+            throw new RuntimeException("Catalyst must be specified");
         }
         this.catalyst = catalyst;
     }
@@ -50,6 +52,8 @@ public class Elixir {
     public void addIngredient(Ingredient i) {
         if (isCreated) {
             throw new RuntimeException("Elixir is already created.");
+        } else if (i == null) {
+            throw new RuntimeException("Ingredient must be specified");
         }
         ingredients.add(i);
     }
@@ -57,6 +61,8 @@ public class Elixir {
     public void removeIngredient(Ingredient i) {
         if (isCreated) {
             throw new RuntimeException("Elixir is already created.");
+        } else if (i == null) {
+            throw new RuntimeException("Ingredient must be specified");
         }
         ingredients.remove(i);
 
@@ -75,12 +81,12 @@ public class Elixir {
 
     @Override
     public String toString() {
-        return "Elixir{" +
-                "name='" + name + '\'' +
-                ", isCreated=" + isCreated +
-                ", power=" + power +
-                ", catalyst=" + catalyst +
-                ", ingredients=\n" + ingredients +
+        return "Elixir {" +
+                "\nname='" + name + '\'' +
+                ", \nisCreated=" + isCreated +
+                ", \npower=" + power +
+                ", \ncatalyst=" + catalyst +
+                ", \ningredients=" + ingredients +
                 "}";
     }
 }

@@ -16,6 +16,9 @@ public class Mineral extends Ingredient {
     }
 
     public void setPower(int power) {
+        if (power < 0) {
+            throw new RuntimeException("Value cannot be negative.");
+        }
         this.power = power;
     }
 

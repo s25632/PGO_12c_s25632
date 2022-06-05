@@ -20,6 +20,9 @@ public class Crystal extends Mineral {
     }
 
     public void setMagicPower(int magicPower) {
+        if (magicPower < 0 ) {
+            throw new RuntimeException("Value cannot be negative.");
+        }
         this.magicPower = magicPower;
     }
 

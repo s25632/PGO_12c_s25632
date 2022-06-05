@@ -16,6 +16,9 @@ public class Plant extends Ingredient {
     }
 
     public void setToxicity(int toxicity) {
+        if (toxicity < 0) {
+            throw new RuntimeException("Value cannot be a negative.");
+        }
         this.toxicity = toxicity;
     }
 
